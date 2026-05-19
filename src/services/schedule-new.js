@@ -4,7 +4,7 @@ export async function scheduleNew({ id, name, when }) {
     try {
         // faz a requisicao para enviar os dados do agendamento
         await fetch(`${apiConfig.baseURL}/schedules`, {
-            methodes: 'POST',
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
